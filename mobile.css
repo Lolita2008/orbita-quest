@@ -1,0 +1,60 @@
+/* Phone layout; shared with the standalone download. */
+html{overflow-x:clip}body{min-width:280px}button,a{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}img{max-width:100%}
+@media(max-width:800px){
+ header,main,footer{padding-left:24px;padding-right:24px}
+ .hero{overflow:clip;padding-top:36px;min-height:0}
+ .hero-copy{position:relative;z-index:3}
+ .hero h1{font-size:clamp(38px,7.5vw,56px);line-height:1.15;letter-spacing:-1.8px}
+ .hero .lead{font-size:15px;line-height:1.8;max-width:560px}
+ .hero .lead br{display:none}
+ .hero-actions{margin-top:26px;gap:12px}
+ .hero-actions .muted{font-size:12px}
+ .primary{min-height:48px;font-size:14px;padding:14px 20px;justify-content:space-between}
+ .stats{margin-top:28px;gap:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:420px}
+ .stats b{font-size:25px}.stats span{font-size:11px;line-height:1.5;padding-right:8px}
+ .space-art{width:100%;height:300px;max-width:460px;margin:12px auto 6px;transform:none;overflow:hidden;align-self:center}
+ .planet{width:230px;height:230px;left:calc(50% - 115px);top:33px}
+ .orbit-a{width:340px;height:135px;left:calc(50% - 170px);top:83px}
+ .orbit-b{width:295px;height:280px;left:calc(50% - 147.5px);top:4px}
+ .moon{left:calc(50% + 116px);top:62px;width:23px;height:23px}
+ .spark{left:calc(50% - 135px);top:38px;font-size:25px}
+ .art-label{bottom:8px;left:0;width:100%;text-align:center;font-size:9px}
+ .coordinates{display:none}
+ .section-top{gap:14px;margin-bottom:16px}.section-top h2{font-size:21px;margin:8px 0}
+ .section-top>span{max-width:130px;font-size:9px;text-align:right}
+ .route-grid{grid-template-columns:1fr;gap:0}
+ .route-item{display:grid;grid-template-columns:24px 32px minmax(0,1fr);gap:4px 12px;padding:17px 16px;border-right:0;border-bottom:1px solid var(--line)}
+ .route-item .number{grid-column:1;grid-row:1 / 3;align-self:center;font-size:11px}
+ .route-item .route-icon{grid-column:2;grid-row:1 / 3;align-self:center;margin:0;font-size:26px}
+ .route-item h3{grid-column:3;grid-row:1;font-size:15px;margin:0}
+ .route-item p{grid-column:3;grid-row:2;font-size:12px;margin:0;line-height:1.6}
+ .note{align-items:flex-start;padding:22px 0;gap:12px}.note p{font-size:12px;margin:0;line-height:1.8}.note p br{display:none}
+ footer{padding-top:20px;padding-bottom:max(20px,env(safe-area-inset-bottom));gap:16px;font-size:10px;align-items:center}
+ footer span:last-child{display:none}
+ #game,#result{padding-top:26px;padding-bottom:36px;min-height:0}
+ .mission-top{align-items:flex-start;gap:12px}.mission-top .eyebrow{font-size:9px;letter-spacing:1px;line-height:1.8}
+ #counter{font-size:10px;white-space:nowrap;line-height:1.8}
+ .progress{margin:16px 0 22px;height:4px}
+ .flight-strip{gap:6px;padding-bottom:15px;margin-bottom:20px;font-size:10px;letter-spacing:.5px;overflow-wrap:anywhere}
+ .chapter{padding:20px;margin-bottom:22px}.chapter h2{font-size:23px;line-height:1.4;margin:12px 0}
+ .chapter p{font-size:14px;line-height:1.85}
+ .game-layout{display:block}.game-layout aside{display:none}
+ .question-card{padding:20px 18px;border-radius:9px}
+ .telemetry{gap:6px;margin:16px 0}.telemetry span{font-size:10px;padding:6px 8px;line-height:1.6;max-width:100%;overflow-wrap:anywhere}
+ .transmission{padding-left:13px;margin:20px 0}.transmission-label{font-size:10px;line-height:1.7;letter-spacing:.5px}
+ .story{font-size:15px;line-height:1.85}
+ .question-card h1{font-size:23px;line-height:1.45;letter-spacing:-.4px;margin:23px 0}
+ .option{font-size:14px;line-height:1.7;padding:14px 12px;gap:12px;min-height:56px;align-items:flex-start;margin-bottom:12px}
+ .option span{width:28px;height:28px;font-size:12px;line-height:1;align-self:flex-start}
+ .hint-button{min-height:48px;font-size:14px;text-align:left}
+ #hint{font-size:14px;line-height:1.85;margin-top:12px}
+ #feedback{padding:18px 15px;font-size:14px;overflow-wrap:anywhere}
+ #feedback .eyebrow{line-height:1.8;font-size:10px;letter-spacing:1px}
+ #next{display:flex;width:100%;margin-top:18px;gap:16px;white-space:normal;line-height:1.6}
+ #result h1{font-size:clamp(32px,8vw,43px);line-height:1.2;letter-spacing:-1.2px;margin:24px 0}
+ #result .lead{font-size:15px;line-height:1.9}.result-score{gap:12px;align-items:center}.result-score b{font-size:64px}.result-score span{font-size:13px}
+ #restart{width:100%}.review-title{margin-top:38px;font-size:23px}.review-item h3{font-size:16px;line-height:1.6}.review-item p{font-size:14px;line-height:1.85}.review-item .eyebrow{font-size:10px;letter-spacing:1px}
+ .sources{font-size:14px;padding:18px;line-height:1.9}.sources a{display:inline-block;padding:5px 0}
+ dialog{padding:24px;max-height:calc(100dvh - 32px);overflow:auto;width:calc(100% - 28px)}dialog h2{font-size:24px;line-height:1.35}dialog p{font-size:15px;line-height:1.8}dialog .primary{width:100%}.close{min-width:44px;min-height:44px;margin:-10px -10px 0 4px}
+}
+@media(max-width:380px){header,main,footer{padding-left:16px;padding-right:16px}header{height:76px}.brand{font-size:17px;gap:8px}.logo{font-size:30px}header .text-button{font-size:12px;min-height:44px}.hero h1{font-size:38px}.hero-actions .primary{width:100%}.space-art{height:280px}.planet{top:28px;width:210px;height:210px;left:calc(50% - 105px)}.orbit-a{width:300px;left:calc(50% - 150px)}.moon{left:calc(50% + 100px)}.question-card{padding:18px 14px}.chapter{padding:18px}.question-card h1{font-size:21px}}
